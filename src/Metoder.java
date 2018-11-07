@@ -1,5 +1,7 @@
 package enums;
 
+import enums.FluidTable;
+
 public class Method_table {
     
     static double G = 9.82;
@@ -13,10 +15,11 @@ public class Method_table {
      * @param fahrenheit
      * @return
      */
+    
     public static double fahrenheitToCelsius(double fahrenheit) {
         return (fahrenheit -32) / 1.8;
     }
- //en metod som gör grader kelvin till celcius
+    //En metod som räknar ut vätsketrycket i en vätska vid ett visst djup.
     public static double kelvinToCelsius(double kelvin) {
         double celsius = kelvin + 273.15;
         return celsius;
@@ -24,15 +27,19 @@ public class Method_table {
         
     }
     
-    //en moted som räknar ut vätske trycket i en vätska vid ett visst tryck
+    //En metod som räknar ut vätsketrycket i vatten vid ett visst djup.
     public static double fluidPressure(FluidTable fluid, double deep) {
         double p;
         p = fluid.density * G * deep;
         return p;
         
     }
-    //en metod som räknar vätsketrycket i vatten
+    //En metod som räknar ut vätsketrycket i vatten vid ett visst djup
     public static double pressureUnderWater(double deep) {
-        
+        return FluidTable.WATER.density * G * deep;
         
     }
+    //En metod som räknar ut kinetisk energi med hjälp av massa och hastighet.
+    public static double fluidPressure(FluidTable fluid, double deep)
+    return fluidPressure(FluidTable.WATER, 10)
+}
