@@ -27,19 +27,35 @@ public class Method_table {
         
     }
     
-    //En metod som räknar ut vätsketrycket i vatten vid ett visst djup.
+    /** En metod som räknar ut vätsketrycket i vatten vid ett visst djup.
+     * 
+     * @param fluid
+     * @param deep
+     * @return
+     */
     public static double fluidPressure(FluidTable fluid, double deep) {
         double p;
         p = fluid.density * G * deep;
         return p;
         
     }
-    //En metod som räknar ut vätsketrycket i vatten vid ett visst djup
+    /** En metod som räknar ut vätsketrycket i vatten vid ett visst djup
+     * 
+     * @param deep
+     * @return
+     */
     public static double pressureUnderWater(double deep) {
         return FluidTable.WATER.density * G * deep;
         
     }
-    //En metod som räknar ut kinetisk energi med hjälp av massa och hastighet.
-    public static double fluidPressure(FluidTable fluid, double deep)
+    /** En metod som räknar ut kinetisk energi med hjälp av massa och hastighet.
+     * @param mass
+     * @param velocity
+     * @return
+     */
+    public static double kineticEnergy(double mass, double velocity)
     return fluidPressure(FluidTable.WATER, 10)
-}
+
+
+	//double speed = Math.sqrt(height * g * 2);
+	
