@@ -276,4 +276,4 @@ public class Metoder {
 		double height = (velocity) / (2 * G);
 		return height;
 	}
-}
+}{}

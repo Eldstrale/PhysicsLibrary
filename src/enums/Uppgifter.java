@@ -32,7 +32,7 @@ public class Uppgifter {
 
 		System.out.println("Uppgift 9: " + (Metoder.heat(SolidTable.ICE, 0.5, 5) + 2260 * 1E3 * 0.5) + " J");
 
-		System.out.println("Uppgift 10: " + Metoder.fallSpeed(100) + " m/s");
+		System.out.println("Uppgift 11: " + Metoder.fallSpeed(100) + " m/s");
 
 	}
 
