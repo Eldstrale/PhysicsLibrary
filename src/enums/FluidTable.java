@@ -1,5 +1,5 @@
 package enums;
-
+;
 public enum FluidTable {
 
 	H20(0.998, 4.19, 0, 100, 2260), 
